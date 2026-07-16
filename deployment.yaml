@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: edge-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: edge-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: edge-app
-        image: chameleon159/edge-app:v1
+        image: chameleon159/edge-app:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 80
