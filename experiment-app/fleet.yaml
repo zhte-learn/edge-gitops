@@ -1,0 +1,5 @@
+targetCustomizations:
+- name: edge02-experiment
+  clusterSelector:
+    matchLabels:
+      experiment: "true"

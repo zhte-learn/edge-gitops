@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: experiment-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: experiment-app
+  template:
+    metadata:
+      labels:
+        app: experiment-app
+    spec:
+      containers:
+      - name: experiment-app
+        image: nginx:latest
+        ports:
+        - containerPort: 80
