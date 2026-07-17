@@ -1,0 +1,14 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: monitoring
+  namespace: fleet-default
+spec:
+  repo: https://github.com/zhte-learn/edge-gitops.git
+  branch: master
+  paths:
+  - monitoring
+  targets:
+  - clusterSelector:
+      matchLabels:
+        provider.cattle.io: k3s
