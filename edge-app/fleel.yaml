@@ -1,0 +1,8 @@
+targetCustomizations:
+- name: all-edges
+  clusterSelector:
+    matchExpressions:
+    - key: provider.cattle.io
+      operator: NotIn
+      values:
+      - harvester
