@@ -1,0 +1,11 @@
+grafana:
+  serviceMonitor:
+    metricRelabelings: []
+
+kubelet:
+  serviceMonitor:
+    metricRelabelings: []
+
+prometheus:
+  serviceMonitor:
+    metricRelabelings: []
